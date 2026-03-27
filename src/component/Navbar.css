@@ -1,0 +1,112 @@
+/* NAVBAR WRAPPER */
+.nav-wrapper {
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+
+  width: 100%;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 16px 24px;
+}
+
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  text-decoration: none;
+}
+
+.brand-logo img {
+  height: 42px;     
+  width: auto;
+  object-fit: contain;
+}
+
+.brand-name {
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: #0b2c3d;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* MENU */
+.navbar {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li a {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  color: #000;
+}
+
+.navbar li a.active {
+  color: #ff4c4c;
+}
+
+
+.nav-toggle {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+
+@media (max-width: 991px) {
+
+  .nav-toggle {
+    display: block;
+  }
+
+  .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    width: 100%;
+    background: #fff;
+
+    flex-direction: column;
+    align-items: center;
+
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease;
+  }
+
+  .navbar.open {
+    max-height: 400px;
+  }
+
+  .navbar li {
+    width: 100%;
+    text-align: center;
+    padding: 14px 0;
+    border-bottom: 1px solid #eee;
+  }
+}
+
+/* MOBILE LOGO SIZE */
+@media (max-width: 576px) {
+  .brand-logo img {
+    height: 36px;
+  }
+
+  .brand-name {
+    font-size: 20px;
+  }
+}
