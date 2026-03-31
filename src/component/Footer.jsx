@@ -62,7 +62,7 @@ const Footer = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        <span>RohitMalviya</span>
+                        <span>Rohit Malviya</span>  
                     </a>
                 </div>
 
