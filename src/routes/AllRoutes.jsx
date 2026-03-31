@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom'
 
 import Layout from './Layout'
 import WithoutFooterLayout from './WithoutFooterLayout'
@@ -16,7 +16,7 @@ import SingleProduct from "../pages/SingleProduct";
 
 const AllRoutes = () => {
   return (
-    <BrowserRouter>
+   
       <Routes>
 
         <Route path='/' element={
@@ -71,7 +71,7 @@ const AllRoutes = () => {
         } />
 
       </Routes>
-    </BrowserRouter>
+  
   )
 }
 
