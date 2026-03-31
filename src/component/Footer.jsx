@@ -58,7 +58,7 @@ const Footer = () => {
                     <br />
                     Designed By @
                     <a
-                        href="https://github.com/RohitMalviya"
+                        href="https://github.com/Rohitmalviya21"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
